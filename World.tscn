@@ -43,7 +43,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
-gravity = 40
+gravity = 50
 jump_force = -1000
 
 [node name="Player texture" type="Sprite" parent="Player"]
@@ -190,4 +190,46 @@ scale = Vector2( 0.272921, 0.250489 )
 texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Platform9"]
+shape = SubResource( 3 )
+
+[node name="Platform13" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+position = Vector2( 1152, 320 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Platform13"]
+scale = Vector2( 0.272921, 0.250489 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Platform13"]
+shape = SubResource( 3 )
+
+[node name="Platform14" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+position = Vector2( 1152, 192 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Platform14"]
+scale = Vector2( 0.272921, 0.250489 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Platform14"]
+shape = SubResource( 3 )
+
+[node name="Platform15" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+position = Vector2( 1280, 320 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Platform15"]
+scale = Vector2( 0.272921, 0.250489 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Platform15"]
 shape = SubResource( 3 )
