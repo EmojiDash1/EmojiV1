@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tumblr_mre96eBd7b1rzvzxbo1_500.png-9e40e743f644cc318b907d9e1922688c.stex"
+path="res://.import/tumblr_mre96eBd7b1rzvzxbo1_500.png-e27c859743cb249f896e768adeb7ac81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tumblr_mre96eBd7b1rzvzxbo1_500.png"
-dest_files=[ "res://.import/tumblr_mre96eBd7b1rzvzxbo1_500.png-9e40e743f644cc318b907d9e1922688c.stex" ]
+source_file="res://Terrain/tumblr_mre96eBd7b1rzvzxbo1_500.png"
+dest_files=[ "res://.import/tumblr_mre96eBd7b1rzvzxbo1_500.png-e27c859743cb249f896e768adeb7ac81.stex" ]
 
 [params]
 
