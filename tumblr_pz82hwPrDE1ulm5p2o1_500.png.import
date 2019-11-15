@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-9742da48ad14b02c593a14950493e2fb.stex"
+path="res://.import/tumblr_pz82hwPrDE1ulm5p2o1_500.png-7ecad105851a2c76a045aa65d5607db1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/icon.png"
-dest_files=[ "res://.import/icon.png-9742da48ad14b02c593a14950493e2fb.stex" ]
+source_file="res://tumblr_pz82hwPrDE1ulm5p2o1_500.png"
+dest_files=[ "res://.import/tumblr_pz82hwPrDE1ulm5p2o1_500.png-7ecad105851a2c76a045aa65d5607db1.stex" ]
 
 [params]
 
