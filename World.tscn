@@ -1,85 +1,17 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://meme.png" type="Texture" id=1]
-[ext_resource path="res://KinematicBody2D.gd" type="Script" id=2]
-[ext_resource path="res://TOdqR7h.png" type="Texture" id=3]
-[ext_resource path="res://EIfI8JZU0AEIHWA.jpg" type="Texture" id=4]
-[ext_resource path="res://tumblr_mre96eBd7b1rzvzxbo1_500.png" type="Texture" id=5]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 32 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 480, 64 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 64, 64 )
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
 
 [node name="World" type="Node"]
 
-[node name="Background" type="Sprite" parent="."]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 512, 288 )
-scale = Vector2( 1.62, 1.1639 )
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 352, 96 )
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
-gravity = 40
-jump_force = -1000
-
-[node name="Player texture" type="Sprite" parent="Player"]
-position = Vector2( 1.90735e-006, -1.90735e-006 )
-scale = Vector2( 0.203822, 0.213333 )
-texture = ExtResource( 3 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-shape = SubResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-current = true
-drag_margin_left = 0.0
-drag_margin_top = 0.0
-drag_margin_right = 0.0
-drag_margin_bottom = 0.0
-
-[node name="Walls" type="Node" parent="."]
-editor/display_folded = true
-
-[node name="Platform" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-light_mask = 0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Platform Texture" type="Sprite" parent="Walls/Platform"]
-position = Vector2( 512, 448 )
-scale = Vector2( 1.536, 0.26556 )
-texture = ExtResource( 4 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Platform"]
-position = Vector2( 512, 448 )
-shape = SubResource( 2 )
-
-[node name="Platform3" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-position = Vector2( 864, 704 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Platform3"]
-position = Vector2( -96, -384 )
-scale = Vector2( 0.272921, 0.250489 )
-texture = ExtResource( 5 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Platform3"]
-position = Vector2( -96, -384 )
-shape = SubResource( 3 )
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( -3.05176e-005, -1.62903 )
+texture = ExtResource( 2 )
